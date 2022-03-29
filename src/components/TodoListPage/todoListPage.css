@@ -137,3 +137,8 @@ header {
   text-decoration: line-through;
   color: rgba(0, 0, 0, 0.555);
 }
+
+.submit {
+  border: none;
+  background-color: transparent;
+}
