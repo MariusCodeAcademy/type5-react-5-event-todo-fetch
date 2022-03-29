@@ -11,6 +11,10 @@ function Users() {
   useEffect(() => {
     console.log('useEffect Users ran ===');
 
+    getUsers();
+  }, []);
+
+  function getUsers() {
     fetch(userUrl)
       .then((resp) => resp.json())
       .then((data) => {
@@ -19,7 +23,7 @@ function Users() {
         setUsersArr(data);
       })
       .catch((err) => console.log(err.message));
-  }, []);
+  }
 
   return (
     <div>
