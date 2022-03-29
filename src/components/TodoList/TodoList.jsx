@@ -3,9 +3,9 @@ import TodoItem from '../TodoItem/TodoItem';
 function TodoList(props) {
   return (
     <ul className='list'>
-      <TodoItem />
-      <TodoItem />
-      <TodoItem />
+      {props.items.map((todoObj) => (
+        <TodoItem key={todoObj.id} item={todoObj} />
+      ))}
     </ul>
   );
 }

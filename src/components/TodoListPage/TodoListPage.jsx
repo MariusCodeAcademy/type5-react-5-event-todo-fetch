@@ -17,7 +17,7 @@ const initTodos = [
   {
     id: 3,
     title: 'Go to park',
-    isDone: false,
+    isDone: true,
   },
 ];
 
