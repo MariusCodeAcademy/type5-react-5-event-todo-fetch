@@ -1,5 +1,9 @@
 function TodoHeader() {
-  return <div>TodoHeader</div>;
+  return (
+    <header>
+      <img className='img-fluid cover-img' src='gold.jpg' alt='great view' />
+    </header>
+  );
 }
 
 export default TodoHeader;
